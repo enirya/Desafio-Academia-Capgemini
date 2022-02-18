@@ -1,14 +1,32 @@
-## Questão 01 Desafio de Programação Academia Capgemini
+# :orange_book: **Questão 01**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere *
+e espaços. A base e altura da escada devem ser iguais ao valor de n. A última linha não deve conter
+nenhum espaço.
 
-## Estrutura do Projeto
+#### **Exemplo**
 
-É um projeto Java gerado automaticamente através do Visual Studio Code:
+**Entrada**
 
-- `src`: pasta que mantém código-fonte e classes de teste
-- `lib`: pasta que mantém as dependências do projeto (incluindo JUnit)
+`3`
 
-## Como executar o Projeto
+**Saída**
 
-O projeto pode ser executado através de um 
+```
+     *
+    **
+   ***
+  ****
+ *****
+******
+```
+
+## :gear: Requisitos para execução do Projeto
+
+
+
+## :hammer: Como executar o Projeto
+
+
+
+## :heavy_check_mark: Testes

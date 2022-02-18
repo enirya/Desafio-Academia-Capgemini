@@ -1,18 +1,41 @@
-## Getting Started
+# :orange_book: **Questão 02**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Débora se inscreveu em uma rede social para se manter em contato com seus amigos. A
+página de cadastro exigia o preenchimento dos campos de nome e senha, porém a senha precisa ser
+forte. O site considera uma senha forte quando ela satisfaz os seguintes critérios:
 
-## Folder Structure
+● Possui no mínimo 6 caracteres.
+● Contém no mínimo 1 digito.
+● Contém no mínimo 1 letra em minúsculo.
+● Contém no mínimo 1 letra em maiúsculo.
+● Contém no mínimo 1 caractere especial. Os caracteres especiais são: !@#$%^&*()-+
 
-The workspace contains two folders by default, where:
+Débora digitou uma string aleatória no campo de senha, porém ela não tem certeza se é uma
+senha forte. Para ajudar Débora, construa um algoritmo que informe qual é o número mínimo de
+caracteres que devem ser adicionados para uma string qualquer ser considerada segura.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+#### **Exemplo**
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+**Entrada**
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+`Ya3`
 
-## Dependency Management
+**Saída**
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+`3`
+
+**Explicação:**
+
+Ela pode tornar a senha segura adicionando 3 caracteres, por exemplo, &ab, transformando
+a senha em Ya3&ab. 2 caracteres não são suficientes visto que a senha precisa ter um tamanho
+mínimo de 6 caracteres.
+
+## :gear: Requisitos para execução do Projeto
+
+
+
+## :hammer: Como executar o Projeto
+
+
+
+## :heavy_check_mark: Testes

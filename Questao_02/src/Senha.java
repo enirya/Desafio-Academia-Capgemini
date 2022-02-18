@@ -2,23 +2,25 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.print.DocFlavor.STRING;
-
 /**
- * Classe para objetos do tipo Senha, onde serão contidos, valores e métodos
- * para o mesmo.
+ * Senha
  * 
  * @author Tayrine Lopes
- * @version 1.0
+ * @version 1.0.0
+ * @see Regex
+ * @since Release 1.0.0
  */
 
 public class Senha {
 
     /**
-     * Método main onde é executado o código
+     * Método main onde é passada a senha definida através do método captarSenha() e
+     * é utilizado para executar o método validarSenha()
      * 
-     * @param args
-     * @throws Exception
+     * @see captarSenha();
+     * @see validarSenha();
+     * @param args Argumentos que podem ser passados se necessário
+     * @throws Exception Error
      */
     public static void main(String[] args) throws Exception {
         String senha = captarSenha();
@@ -44,7 +46,7 @@ public class Senha {
      * caracteres
      * 
      * @param senha String
-     * @return boolean
+     * @return boolean Boolean
      */
 
     public static boolean verificarTamanhoSenha(String senha) {
@@ -60,7 +62,7 @@ public class Senha {
      * ao menos um caractere numérico
      * 
      * @param senha String
-     * @return boolean
+     * @return Boolean
      */
 
     public static boolean verificarSeTemNumero(String senha) {
@@ -75,8 +77,8 @@ public class Senha {
      * Este método utiliza de uma expressão regular para verificar se a senha possui
      * ao menos uma letra minúscula
      * 
-     * @param senha
-     * @return boolean
+     * @param senha String
+     * @return boolean Boolean
      */
     public static boolean verificarSeTemMinusculo(String senha) {
         String regex = "[a-z]";
@@ -90,8 +92,8 @@ public class Senha {
      * Este método utiliza de uma expressão regular para verificar se a senha possui
      * ao menos uma letra maiúscula
      * 
-     * @param senha
-     * @return boolean
+     * @param senha String
+     * @return boolean Boolean
      */
     public static boolean verificarSeTemMaiusculo(String senha) {
         String regex = "[A-Z]";
@@ -105,8 +107,8 @@ public class Senha {
      * Este método utiliza de uma expressão regular para verificar se a senha possui
      * ao menos um caractere especial
      * 
-     * @param senha
-     * @return boolean
+     * @param senha String
+     * @return boolean Boolean
      */
     public static boolean verificarSeTemCaractereEspecial(String senha) {
         String regex = "[!@#$%^&*()-+]";
@@ -127,7 +129,7 @@ public class Senha {
      * É exibido para o usuário o número que for maior (caracteres especiais ou
      * caracteres faltantes).
      * 
-     * @param senha
+     * @param senha String
      */
     public static void validarSenha(String senha) {
         Boolean temSeisOuMaisCaracteres = verificarTamanhoSenha(senha);
