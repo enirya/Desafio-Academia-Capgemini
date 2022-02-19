@@ -35,13 +35,6 @@ A lista de todos os anagramas pares são: [o, o], [ov, vo] que estão nas posiç
 
 A lista de todos os anagramas pares são: [i, i], [q, q] e [ifa, fai] que estão nas posições `[[0, 3]], [[8, 9]] e [[0, 1, 2], [1, 2, 3]]`.
 
-
-## :gear: Requisitos para execução do Projeto
-
-Possuir um computador com acesso a internet para
-
-## 🛠️ Como executar o Projeto
-
-
-
 ## :heavy_check_mark: Testes
+
+Os testes foram realizados utilizando o JUnit e estão na pasta `/src` com o nome `AnagramaTest.java`

@@ -21,12 +21,6 @@ nenhum espaço.
 ******
 ```
 
-## :gear: Requisitos para execução do Projeto
-
-
-
-## :hammer: Como executar o Projeto
-
-
-
 ## :heavy_check_mark: Testes
+
+Os testes foram realizados utilizando o JUnit e estão na pasta `/src` com o nome `EscadariaTest.java`
