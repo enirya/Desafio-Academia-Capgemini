@@ -19,11 +19,13 @@ public class Escadaria {
 
     /**
      * Este método é responsável por gerar uma escada através do uso iterativo do
-     * método
-     * gerarDegrau, onde n é a altura da escada
+     * método gerarDegrau, onde n é a altura da escada. A iteração é responsável por
+     * adicionar o resultado do método gerarDegrau() em uma String chamada escada
+     * que é retornada pelo método.
      * 
      * @see gerarDegrau();
      * @param n Representa a quantidades de "degraus" (*) que a escada irá ter
+     * @return escada String - representa a escada
      */
     public static String gerarEscada(int n) {
         String escada = "";
@@ -34,10 +36,15 @@ public class Escadaria {
     }
 
     /**
-     * Este método é responsável por calcular
+     * Este método define os elementos que utilizaremos para criar a 'escada',
+     * recebendo dois parâmetros que irão definir sua dimensão. A iteração é
+     * responsável por verificar em qual degrau da escada estamos e adicionar
+     * espaços ou asteriscos compondo uma string (degrau) que será retornada.
      * 
-     * @param tamanhoDegrau Representa
-     * @param numeroDegrau  sdasdasdas
+     * @param tamanhoDegrau Representa quantos andares a escada irá possuir no total
+     * @param numeroDegrau  Número do degrau representa o andar do degrau (é iterado
+     *                      em gerarEscada())
+     * @return degrau String - Representa um degrau da escada
      */
     public static String gerarDegrau(int tamanhoDegrau, int numeroDegrau) {
         String espaco = " ";

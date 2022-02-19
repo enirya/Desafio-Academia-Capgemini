@@ -12,7 +12,9 @@ import java.util.Scanner;
 public class Anagrama {
 
     /**
-     * Método Main, utilizado
+     * Este método é responsável por captar o input do usuário, criar um array com
+     * todas as possíveis substrings a partir desse input, ordenar essas substrings
+     * e então encontrar o número de anagramas existentes.
      * 
      * @param args Argumentos que podem ser passados se necessário
      */
@@ -29,22 +31,25 @@ public class Anagrama {
     }
 
     /**
-     * Método
+     * Método responsável por captar o input do usuário
      * 
-     * @return String
+     * @return input String entrada do usuário
      */
     public static String getUserInput() {
         try (Scanner scanner = new Scanner(System.in)) {
-            String string = scanner.nextLine();
-            return string;
+            String input = scanner.nextLine();
+            return input;
         }
     }
 
     /**
-     * Ass
+     * Este método recebe como parâmero o input do usuário e cria substrings com
+     * tamanho menor que o tamanho total do input, essas substrings são salvas em
+     * outro Array e ele é retornado.
      * 
-     * @param input
-     * @return ArrayList<String>
+     * @param input String - A string inserida pelo usuário.
+     * @return substringArray ArrayList<String> - Um array com todas as possíveis
+     *         substrings contidas no input do usuário.
      */
     public static ArrayList<String> createSubstringArray(String input) {
         ArrayList<String> substringArray = new ArrayList<String>();
@@ -62,10 +67,15 @@ public class Anagrama {
     }
 
     /**
+     * Este método recebe como parâmetro um ArrayList chamado substringArray, o
+     * contador então percorre o parâmetro recebido e grava os caracteres em um
+     * Array de caracteres. Esse array de caracteres é então colocado em ordem e
+     * salvo de acordo com sua posição do índice na variável substringArray
      * 
-     * 
-     * @param substringArray
-     * @return ArrayList<String>
+     * @param substringArray ArrayList<String> - Array List com substrings não
+     *                       ordenadas
+     * @return susbstringArray ArrayList<String> - Array List com substrings
+     *         ordenadas
      */
     public static ArrayList<String> sortSubstringArray(ArrayList<String> substringArray) {
         for (int i = 0; i < substringArray.size(); i++) {
@@ -87,9 +97,10 @@ public class Anagrama {
      * elemento na posição i com o elemento na posição j. Caso sejam iguais,
      * adiciona mais um ao contador de anagramas.
      * 
-     * @param substringArray Array de Substrings ordenadas do Input.
-     * @return numberOfAnagramas Número de anagramas contidos no array de substrings
-     *         ordenadas.
+     * @param substringArray ArrayList<String> Array de Substrings ordenadas do
+     *                       Input.
+     * @return numberOfAnagramas Int Número de anagramas contidos no array de
+     *         substrings ordenadas.
      */
     public static int getNumberOfAnagrams(ArrayList<String> substringArray) {
         int numberOfAnagrams = 0;
